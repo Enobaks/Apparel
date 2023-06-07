@@ -1,0 +1,15 @@
+:root {
+    --main-bg-color: #001c40;
+}
+
+.main-color {
+    background-color: var(--main-bg-color) !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .m-left {
+        margin-left: 34rem !important;
+        width: 40%;
+        justify-content: space-around;
+    }
+  }
