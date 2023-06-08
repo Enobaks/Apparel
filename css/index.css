@@ -49,6 +49,13 @@
     left: 2rem !important;
     top: 13rem !important;
 }
+.caption-text2 {
+    width: 30rem !important;
+    position: absolute !important;
+    color: #fff !important;
+    right: 0 !important;
+    top: 13rem !important;
+}
 
 @media screen and (min-width: 1000px) {
     .m-left {
