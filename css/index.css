@@ -6,7 +6,6 @@
 :root {
     --main-bg-color: #001c40;
 }
-
 .main-color {
     background-color: var(--main-bg-color) !important;
 }
@@ -135,11 +134,9 @@
     object-fit: cover;
     transition: .5s;
   }
-  
   .product-offer:hover img {
     transform: scale(1.2) rotate(5deg);
   }
-  
   .product-offer .offer-text {
     position: absolute;
     top: 0;
@@ -152,6 +149,21 @@
     justify-content: center;
     background: rgba(61, 70, 77, 0.5);
     z-index: 1;
+  }
+  /* Product Details Page */
+  .btn-custom {
+    background-color: var(--main-bg-color) !important;
+    color: #fff !important;
+  }
+  .star {
+    color: var(--main-bg-color) !important;
+  }
+  .custom-radio input{
+    accent-color: var(--main-bg-color) !important;
+  }
+  .product-details {
+    padding: 3rem 0 0 3rem;
+    margin-bottom: 2rem;
   }
 
 @media screen and (min-width: 1000px) {
@@ -186,4 +198,7 @@
     .media-links {
         justify-content: flex-start;
     }
+    .product-details {
+        padding: 3rem 0 0 0;
+      }
   }
