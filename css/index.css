@@ -40,7 +40,6 @@
 .items {
     margin: 0 !important;
 }
-
 .search {
     width: 70%;
 }
@@ -126,7 +125,6 @@
     position: relative;
     overflow: hidden;
   }
-  
   .product-offer img {
     position: absolute;
     width: 100%;
@@ -165,6 +163,11 @@
     padding: 3rem 0 0 3rem;
     margin-bottom: 2rem;
   }
+/* Registration Page */
+.register-image {
+  padding: 0 !important;
+}
+
 
 @media screen and (min-width: 1000px) {
     .m-left {
@@ -182,6 +185,19 @@
     .hero-section {
         width: 100%;
         height: auto;
+    }
+    .form-wrap {
+      margin-bottom: 3rem !important;
+    }
+  
+  }
+
+  @media screen and (min-width: 550px) {
+    .vimage {
+      height: 100% !important;
+    }
+    .footer-14398 {
+      margin-top: 3rem;
     }
   }
 
@@ -201,4 +217,10 @@
     .product-details {
         padding: 3rem 0 0 0;
       }
+    .register-image {
+        display: none;
+      }
+    .form-wrap {
+      margin-bottom: 3rem !important;
+    }
   }
