@@ -171,11 +171,20 @@
   padding: 0 !important;
 }
 /* Cart Page */
+.cart-wrap {
+  color: #000 !important;
+}
 .product-item-wrap {
   border: 1px solid red;
 }
 .product-color, .product-size {
   font-size: small;
+}
+.qty {
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+ 
 }
 
 @media screen and (min-width: 1000px) {
