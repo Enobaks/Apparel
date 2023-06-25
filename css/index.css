@@ -203,6 +203,10 @@
  .main-description {
   width: 70%;
  }
+ .card-brand img{
+  width: 3rem;
+  margin: 1px .5rem .5rem 0
+ }
  
  @media screen and (min-width: 950px) {
      .m-left {
