@@ -200,6 +200,9 @@
  .checkout {
   width: 60%;
  }
+ .main-description {
+  width: 70%;
+ }
  
  @media screen and (min-width: 950px) {
      .m-left {
