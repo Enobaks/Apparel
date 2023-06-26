@@ -197,8 +197,11 @@
   border: 1px solid blue;
   padding: .5rem;
  }
+ .checkout-wrap h4 {
+  font-size: 1.2rem;
+ }
  .checkout {
-  width: 60%;
+  width: 80%;
  }
  .main-description {
   width: 70%;
@@ -225,6 +228,12 @@
          width: 100%;
          height: auto;
      }
+     .checkout-wrap h4 {
+      font-size: 1.5rem !important;
+     }
+     .checkout {
+      width: 60% !important;
+     }
  
    
    }
@@ -236,6 +245,20 @@
      }
      .register-form form{
        margin-bottom: 3rem;
+     }
+     .checkout-wrap p {
+      text-align: center;
+     }
+     .checkout {
+      font-size: x-small;
+      width: 80%;
+     }
+     .product-item {
+      align-items: center;
+     }
+     .cloth-item {
+      width: 8rem;
+      height: 11rem;
      }
    }
  
