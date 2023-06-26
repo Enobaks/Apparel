@@ -24,79 +24,67 @@
 </head>
 <body>
     <!-- Navbar Begins -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 navigation-bar">
-        <div class="container-fluid">
-        <a class="navbar-brand fs-2 fw-bold" href="index.html"><span class="text-danger">A</span>pparel</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-left me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Product
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-regular fa-user me-2"></i>Account
-                  </a>
-                  <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="login.html">Login</a></li>
-                  <li><a class="dropdown-item" href="registration.html">Register</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
-                  </ul>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-cart-shopping me-2" style="color: #000000;"></i>Cart
-                    </a>
-                </li>
-            </ul>
-            <form class="d-flex search" role="search">
-            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn main-color" type="submit">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-            </button>
-            </form>
-        </div>
-        </div>
-    </nav>
+    <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
 
     <!-- Registration Form Begins-->
     <div class="form-wrap row items">
       <div class="col-md-6 register-image">
-        <img src="./images/login-image.jpg" alt="" class="img-fluid vimage">
+        <img src="./images/register-image.jpg" alt="" class="img-fluid vimage">
       </div>
       <div class="col-md-6 pt-5 col-sm-12 register-form">
-        <h2 class="mb-5 text-center fw-bold fs-3">Sign In</h2>
+        <h2 class="mb-5 text-center fw-bold fs-3">Registration</h2>
         <form class="row g-3">
-          <div class="col-md-12">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Firstname</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Lastname</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4">
           </div>
-          <div class="col-md-12">
+          <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password</label>
             <input type="password" class="form-control" id="inputPassword4">
           </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <!-- <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div> -->
           <div class="col-12 d-flex justify-content-between pt-5">
-            <button type="submit" class="btn btn-primary">Sign In</button>
-            <p class="fw-medium">Don't have an account <a href="registration.html">Register</a></p>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <p class="fw-medium">Already have an account <a href="./login.php">login</a></p>
           </div>
         </form>
       </div>
@@ -106,8 +94,9 @@
 
      <!-- Footer Begins -->
      <footer class="footer-14398">
-        <div class="container">
-          <div class="row mb-5">
+        <div class="">
+
+          <div class="row mb-5 items">
             <div class="col-md-3">
                 <a class="navbar-brand fs-2 fw-bold apparel" href="#"><span class="text-danger">A</span>pparel</a>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus. </p>
@@ -144,7 +133,7 @@
             </div>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-4 items">
                 <div class="col-12 pb-4">
                 <div class="line"></div>
                 </div>

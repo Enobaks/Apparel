@@ -210,6 +210,10 @@
   width: 3rem;
   margin: 1px .5rem .5rem 0
  }
+ #quantity {
+  width: 6.2rem;
+  height: 1.6rem;
+ }
  
  @media screen and (min-width: 950px) {
      .m-left {
@@ -238,7 +242,7 @@
    
    }
  
-   @media screen and (min-width: 550px) {
+   @media screen and (max-width: 850px) {
      .vimage {
        height: 100% !important;
        width: 100%;
@@ -250,7 +254,7 @@
       text-align: center;
      }
      .checkout {
-      font-size: x-small;
+      font-size: 11px !important;
       width: 80%;
      }
      .product-item {
