@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+/* font-family: 'Clicker Script', cursive; */
+
 * {
   margin: 0;
   padding: 0;
  }
- 
  :root {
      --main-bg-color: #001c40;
  }
  .main-color {
      background-color: var(--main-bg-color) !important;
+     color: #fff !important;
  }
  .body-wrap {
      width: 100%;
@@ -63,7 +67,7 @@
      padding: 10px;
  }
  .size-img {
-     width: 80% !important;
+     width: 70% !important;
  }
  .next-line {
      margin-top: 3rem;
@@ -177,9 +181,9 @@
  .product-item-wrap {
    border: 1px solid red;
  }
- .product-item {
-  /* border-top: 1px solid rgb(133, 133, 133); */
- }
+ /* .product-item {
+  border-top: 1px solid rgb(133, 133, 133);
+ } */
  .product-color, .product-size, .product-availability {
    font-size: small !important;
  }
@@ -214,6 +218,29 @@
   width: 6.2rem;
   height: 1.6rem;
  }
+ .female-cat-img {
+  width: 9.6rem !important;
+ }
+ .male-punch {
+  top: 12rem;
+  left: 4rem;
+  width: 40%;
+ }
+ .punch {
+  top: 12rem;
+  right: 7rem;
+  width: 40%;
+ }
+ .punch > p.danger, .male-punch > p.danger {
+  font-family: 'Clicker Script', cursive;
+  font-size: 50px;
+  color: #FF2020;
+  margin: 0;
+ }
+ .female-banner, .male-banner {
+  width: 100%;
+  height: auto;
+ }
  
  @media screen and (min-width: 950px) {
      .m-left {
@@ -237,9 +264,12 @@
      }
      .checkout {
       width: 60% !important;
+      font-size: 0.81rem !important;
      }
- 
-   
+      .female-banner, .male-banner {
+      width: 100% !important;
+      height: auto;
+    }
    }
  
    @media screen and (max-width: 850px) {
@@ -264,6 +294,16 @@
       width: 8rem;
       height: 11rem;
      }
+     .cat-hero-section {
+      height: 25rem;
+     }
+     /* .cat-hero-section > img {
+      width: auto !important;
+     } */
+     .male-punch, .punch{
+      top: 3rem;
+     }
+
    }
  
    @media screen and (max-width: 500px) {
@@ -291,5 +331,28 @@
      .product-offer-wrap {
        flex-direction: column !important;
      }
+     .cat-hero-section {
+      overflow: hidden;
+     }
+     .female-banner {
+      width: unset !important;
+      position: relative;
+      right: 32rem;
+     }
+     .punch, .male-punch {
+      right: 0;
+      width: 100%;
+      padding: 5px;
+     }
+     .male-punch {
+      left: 0;
+     }
+     .punch > p.danger, .male-punch > p.danger {
+      font-size: 35px;
+     }
+     .punch > h2, .male-punch h2 {
+      font-size: 1.3rem !important;
+     }
+
     
    }

@@ -18,8 +18,8 @@
                     Product
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Male Clothes</a></li>
-                        <li><a class="dropdown-item" href="#">Female Clothes</a></li>
+                        <li><a class="dropdown-item" href="../cloth-store/male_products.php">Male Clothes</a></li>
+                        <li><a class="dropdown-item" href="../cloth-store/female_products.php">Female Clothes</a></li>
                         <!-- <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
