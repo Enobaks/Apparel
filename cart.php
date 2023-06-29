@@ -29,7 +29,7 @@
     <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
     <div class="cart-wrap p-3">
-        <h3>Shopping Basket</h3>
+        <h3 class="my-4">Shopping Basket</h3>
         <div class="row items">
             <div class="col-md-9 product-item-wrap p-2">
                 <div class="product-item d-flex justify-content-between mb-3">
