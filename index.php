@@ -70,7 +70,7 @@
         <div class="row items">
             <div class="col-md-12 d-flex justify-content-around flex-column flex-sm-row">
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap ">
                             <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
@@ -87,9 +87,9 @@
                     </a>
                 </div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/women-clothes-img.png" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -104,9 +104,9 @@
                     </a>
                 </div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/jogger1.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -122,9 +122,9 @@
                 </div>
                 <div class="w-100 d-none d-md-block"></div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/women-blouse1.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -143,9 +143,9 @@
         <div class="row items next-line">
             <div class="col-md-12 d-flex justify-content-around flex-column flex-sm-row">
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/summer-shirt1.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -160,9 +160,9 @@
                     </a>
                 </div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/women-summer-dress.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -177,9 +177,9 @@
                     </a>
                 </div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/summer-shirt2.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>
@@ -194,9 +194,9 @@
                     </a>
                 </div>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.html">
+                    <a href="product_detail.php">
                         <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                            <img src="./images/women-summer-dress2.jpg" class="card-img-top size-img" alt="...">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold">T-Shirt</p>

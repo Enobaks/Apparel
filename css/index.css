@@ -67,7 +67,8 @@
      padding: 10px;
  }
  .size-img {
-     width: 70% !important;
+    width: 60% !important;
+    height: 16rem;
  }
  .next-line {
      margin-top: 3rem;
@@ -303,6 +304,16 @@
      .male-punch, .punch{
       top: 3rem;
      }
+     .testing {
+      width: 33.33% !important;
+     }
+     .product-action {
+      width: 3.5rem;
+    }
+    .size-img {
+      /* width: 60% !important; */
+      height: 12rem !important;
+   }
 
    }
  
@@ -334,7 +345,7 @@
      .cat-hero-section {
       overflow: hidden;
      }
-     .female-banner {
+     .female-banner, .male-banner {
       width: unset !important;
       position: relative;
       right: 32rem;
@@ -353,6 +364,12 @@
      .punch > h2, .male-punch h2 {
       font-size: 1.3rem !important;
      }
-
+     .product-action {
+      width: 5rem;
+    }
+    .size-img {
+      width: 60% !important;
+      height: 16rem !important;
+   }
     
    }
