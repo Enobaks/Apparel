@@ -29,7 +29,7 @@
             <!-- Navbar Ends -->
 
             <div class="site-section" id="about-section">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row align-items-lg-center">
                         <div class="col-md-8 mb-5 mb-lg-0 position-relative">
                             <img src="images/about_1.jpg" class="img-fluid" alt="Image">
@@ -38,7 +38,7 @@
                                 <span class="caption">for 15 years</span>
                             </div>
                         </div>
-                        <div class="col-md-3 ml-auto">
+                        <div class="col-md-4 ml-auto">
                             <h3 class="section-sub-title">Merchant Company</h3>
                             <h2 class="section-title mb-3">About Us</h2>
                             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>

@@ -32,14 +32,14 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade hero-section">
             <div class="carousel-inner">
                 <div class="carousel-item kal active position-relative">
-                    <img src="./images/slide-111.jpg" class="d-block img-fluid w-100" alt="...">
+                    <img src="./images/slide-111.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text1">
                         <h1 class="fs-1 fw-bold text-white">Summer Sales</h1>
                         <p class="fs-6 text-white"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>
                     </div>
                 </div>
                 <div class="carousel-item kal position-relative">
-                    <img src="./images/slide-2.jpg" class="d-block img-fluid w-100" alt="...">
+                    <img src="./images/slide-22.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text2">
                         <h1 class="fs-1 fw-bold">Summer Sales</h1>
                         <p class="fs-6 text-white">Enter the Summer with Style. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="carousel-item kal position-relative">
-                    <img src="./images/slide-33.jpg" class="d-block img-fluid w-100" alt="...">
+                    <img src="./images/slide-333.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text3">
                         <h1 class="fs-1 fw-bold text-white">Summer Sales</h1>
                         <p class="fs-6 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>

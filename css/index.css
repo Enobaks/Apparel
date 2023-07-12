@@ -32,6 +32,10 @@
      height: 590px !important;
      overflow: hidden !important;
  }
+ .kal img {
+  width: 100% !important;
+  height: auto;
+}
  .product-action {
      width: 5rem;
  }
@@ -183,6 +187,9 @@
    border: 1px solid #999999;
    margin-bottom: 1rem;
  }
+ .product-price {
+  margin: 3rem !important
+}
  /* .product-item {
   border-top: 1px solid rgb(133, 133, 133);
  } */
@@ -211,6 +218,7 @@
  }
  .main-description {
   width: 70%;
+  line-height: 20px;
  }
  .card-brand img{
   width: 3rem;
@@ -398,63 +406,73 @@
     }
 }
  
-   @media screen and (max-width: 850px) {
-    .hero-section {
-      height: auto !important;
-      overflow: unset !important;
-    } 
-    .kal {
-      height: auto !important;
-      overflow: unset;
+@media screen and (max-width: 850px) {
+  .hero-section {
+    height: auto !important;
+    overflow: unset !important;
+  } 
+  .kater {
+    width: unset !important;
+  }
+  .kal {
+    height: auto !important;
+    overflow: unset;
+  }
+  .kal img {
+    width: unset !important;
+    height: auto;
+  }
+  .caption-text2 {
+    left: 11rem !important;
+    top: 29rem !important;
+  }
+  .vimage {
+      height: 100% !important;
+      width: 100%;
     }
-    .kal img {
-      width: auto !important;
-      height: auto;
+    .register-form form{
+      margin-bottom: 3rem;
     }
-    .vimage {
-       height: 100% !important;
-       width: 100%;
-     }
-     .register-form form{
-       margin-bottom: 3rem;
-     }
-     .checkout-wrap p {
-      text-align: center;
-     }
-     .checkout {
-      font-size: 11px !important;
-      width: 80%;
-     }
-     .product-item {
-      align-items: center;
-     }
-     .cloth-item {
-      width: 8rem;
-      height: 11rem;
-     }
-     .cat-hero-section {
-      height: 25rem;
-     }
-     /* .cat-hero-section > img {
-      width: auto !important;
-     } */
-     .male-punch, .punch{
-      top: 3rem;
-     }
-     /* .testing {
-      width: 33.33% !important;
-     } */
-     .product-action {
-      width: 3.5rem;
+    .main-description {
+    width: 100% !important;
     }
-    .size-img {
-      /* width: 60% !important; */
-      height: 12rem !important;
-   }
+    .checkout-wrap p {
+    text-align: center;
+    }
+    .checkout {
+    font-size: 11px !important;
+    width: 80%;
+    }
+    .product-item {
+    align-items: center;
+    }
+    .cloth-item {
+    width: 8rem;
+    height: 11rem;
+    }
+    .cat-hero-section {
+    height: 25rem;
+    }
+    /* .cat-hero-section > img {
+    width: auto !important;
+    } */
+    .male-punch, .punch{
+    top: 3rem;
+    }
+    /* .testing {
+    width: 33.33% !important;
+    } */
+    .product-action {
+    width: 3.5rem;
+  }
+  .size-img {
+    /* width: 60% !important; */
+    height: 12rem !important;
+  }
 
-   }
+}
  
-   @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
      .hero-section {
          height: 24vh;
      }
@@ -503,6 +521,9 @@
      }
      .product-action {
       width: 5rem;
+    }
+    .product-price {
+      margin: 0px !important
     }
     .size-img {
       width: 60% !important;
