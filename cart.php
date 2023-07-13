@@ -29,14 +29,14 @@
     <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
     <div class="cart-wrap p-3">
-        <h3 class="my-4">Shopping Basket</h3>
+        <h3 class="mb-4 shopping-basket">Shopping Basket</h3>
         <div class="row items">
-            <div class="col-md-9 product-item-wrap p-2">
+            <div class="col-md-7 product-item-wrap p-2">
                 <div class="product-item d-flex justify-content-between mb-3">
-                    <img src="./images/women-clothes-img.png" width="100px" class="mr-4 cloth-item" alt="">
+                    <img src="./images/women-clothes-img.png" width="100px" class="mr-4 cloth-item" alt="Red Poker-dot Dress">
                     <div class="product-description p w-100 d-flex">
                         <div class="product-description-details d-flex flex-column justify-content-between">
-                            <p class="text-black main-description">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumy</p>
+                            <p class="text-black main-description">Red Poker-dot Dress. Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo</p>
                             <div>
                                 <p class="product-availability m-0 text-success">In stock</p>
                                 <p class="product-color m-0 text-black"><b class="me-1 fw-bold">Colour:</b>Red</p>
@@ -125,14 +125,65 @@
                     </div>
                 </div>
                 <hr class="cart-line">
+                <div class="total-wrap d-flex flex-column justify-content-end align-items-end">
+                    <div class="subtotal">
+                        <p>
+                            <span class="me-5 fw-semibold">Subtotal:</span><span class="fw-semibold text-dark">&pound;30</span>
+                        </p>
+                        <p>
+                            <span class="me-5 fw-semibold">Shipping:</span><span class="fw-semibold text-dark">free</span>
+                        </p>
+                        <hr class="cart-line">
+                        <p>
+                            <span class="me-5 fw-semibold text-dark">Total:</span><span class="fw-bold text-black ml-4">&pound;30</span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <div class="checkout-wrap d-flex flex-column align-items-center">
-                    <h4>Order Summary</h4>
-                    <p>Subtotal (3 items): <span class="fw-bold">&pound;10</span></p>
-                    <button class="btn btn-custom px-3 checkout">Proceed to Checkout</button>
+            <div class="col-md-4 bg-light rounded">
+                <div class="checkout-wrap d-flex flex-column align-items-start">
+                    <h4 class="fw-bold pt-4">Payment Info.</h4>
+                    <hr class="payment-line bg-secondary">
+                    <p class="fw-semibold">Payment Method</p>
+                    <div class="choice fw-semibold text-dark">
+                        <input type="radio" name="card" class="me-3">
+                        <label for="card" class="fw-semibold">
+                            <i class="fa-regular fa-credit-card me-1"></i>
+                            Credit/Debit Card
+                        </label>
+                    </div>
+                    <div class="choice fw-semibold text-dark">
+                        <input type="radio" name="card" class="me-3">
+                        <label for="card" class="fw-semibold">
+                        <i class="fa-brands fa-paypal me-1"></i>
+                            Paypal
+                        </label>
+                    </div>
+                    <hr class="payment-line bg-secondary mb-4">
+                    <div class="card-name mb-4">
+                        <p class="fw-semibold">Name on Card:</p>
+                        <p class="fw-semibold text-dark">John Carter</p>
+                    </div>
+                    <div class="card-no mb-4">
+                        <p class="fw-semibold">Card Number:</p>
+                        <p class="fw-semibold text-dark">.... .... .... 2745</p>
+                    </div>
+                    <div class="ish d-flex mb-4">
+                        <div class="card-expiry-date me-5">
+                            <p class="fw-semibold">Expiration Date:</p>
+                            <p class="fw-semibold text-dark">05/26</p>
+                        </div>
+                        <div class='cvv'>
+                            <p class="fw-semibold">CVV:</p>
+                            <p class="fw-semibold text-dark">215</p>
+                        </div>
+                    </div>
+                    <div class="ten d-flex justify-content-center">
+                        <button class="btn btn-custom px-3 checkout"> Checkout</button>
+                    </div>
+                    <!-- <a href="check-out.php" class="btn main-color px-3 checkout">Proceed to Checkout</a> -->
                 </div>
-                <div class="card-brand mt-5">
+                <!-- <div class="card-brand mt-5">
                     <p class="fs-5 fw-bold text-black">We Accept</p>
                     <img src="./images/master-card.jpg" alt="">
                     <img src="./images/google-pay.jpg" alt="">
@@ -145,7 +196,7 @@
                     <img src="./images/paypal.jpg" alt="">
                     <img src="./images/Diners-club.jpg" alt="">
                     <img src="./images/klarna.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

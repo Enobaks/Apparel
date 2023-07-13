@@ -31,7 +31,7 @@
     <!-- Navbar End -->
 
     <!-- Shop Detail Start -->
-    <div class="container-fluid pb-5">
+    <div class="container-fluid pb-5 product-detail-wrap">
         <div class="row px-xl-5 items">
             <div class="col-lg-5 mb-30">
                 <div id="" class="">
@@ -41,7 +41,7 @@
 
             <div class="col-lg-7 h-auto mb-30">
                 <div class="h-100 product-details">
-                    <h3>Product Name Goes Here</h3>
+                    <h3>Yellow T-Shirt</h3>
                     <div class="d-flex mb-3">
                         <div class="text-primary mr-2">
                             <small class="fas fa-star star"></small>
@@ -50,9 +50,9 @@
                             <small class="fas fa-star-half-alt star"></small>
                             <small class="far fa-star star"></small>
                         </div>
-                        <small class="pt-1">(99 Reviews)</small>
+                        <small class="pt-1">(1 Review)</small>
                     </div>
-                    <h3 class="font-weight-semi-bold mb-4">$150.00</h3>
+                    <h3 class="font-weight-semi-bold mb-4">&pound;10</h3>
                     <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit
                         clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea
                         Nonumy</p>
@@ -107,36 +107,60 @@
                         </form>
                     </div>
                     <div class="d-flex align-items-center mb-4 pt-2">
-                        <div class="input-group quantity mr-3" style="width: 130px;">
-                            <div class="input-group-btn">
+                        <div class="input-group quantity mr-3" style="width: 160px;">
+                            <div class="input-group-btn d-flex">
                                 <button class="btn btn-custom btn-minus">
                                     <i class="fa fa-minus"></i>
                                 </button>
                             </div>
                             <input type="text" class="form-control border-1 text-center" value="1">
-                            <div class="input-group-btn">
+                            <div class="input-group-btn d-flex">
                                 <button class="btn btn-custom btn-plus">
                                     <i class="fa fa-plus"></i>
                                 </button>
                             </div>
                         </div>
-                        <button class="btn btn-custom px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To
+                        <button class="btn btn-custom px-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-shopping-cart mr-1"></i> Add To
                             Cart</button>
                     </div>
+                    <!-- Modal -->
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                    </button> -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-success" id="staticBackdropLabel">Success!</h1>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"> -->
+                            <i class="fa-solid fa-x" style="color: #b81414;" data-bs-dismiss="modal"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Item added to Cart
+                        </div>
+                        <div class="modal-footer">
+                            <a href="cart.php" class="btn main-color">View in Cart</a>
+                            <a href="male_products.php" class="btn main-color-opp">Continue Shopping</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Modal Ends -->
                     <div class="d-flex pt-2">
                         <strong class="text-dark mr-2">Share on:</strong>
                         <div class="d-inline-flex">
-                            <a class="text-dark px-2" href="">
+                            <a class="text-dark px-2" href="facebook.com">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a class="text-dark px-2" href="">
+                            <a class="text-dark px-2" href="twitter.com">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a class="text-dark px-2" href="">
+                            <a class="text-dark px-2" href="linkedin.com">
                                 <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="text-dark px-2" href="">
-                                <i class="fab fa-pinterest"></i>
                             </a>
                         </div>
                     </div>
@@ -149,7 +173,7 @@
                     <div class="nav nav-tabs mb-4">
                         <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Description</a>
                         <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Information</a>
-                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Reviews (0)</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Reviews (1)</a>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="tab-pane-1">
@@ -202,7 +226,7 @@
                                     <div class="media mb-4">
                                         <img src="images/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
                                         <div class="media-body">
-                                            <h6>John Doe<small> - <i>01 Jan 2045</i></small></h6>
+                                            <h6>John Doe<small> - <i>01 Jan 2023</i></small></h6>
                                             <div class="text-primary mb-2">
                                                 <i class="fas fa-star star"></i>
                                                 <i class="fas fa-star star"></i>
@@ -261,17 +285,16 @@
         <div class="row px-xl-5">
             <div class="row items">
                 <div class="col-md-12 d-flex justify-content-around flex-column flex-sm-row">
-                    <div class="col-md-3 merchant-item mt-5">
-                        <a href="product_detail.html">
+                    <div class="col-md-3 merchant-item testing mt-5">
+                        <a href="product_detail.php">
                             <div class="card card-wrap ">
-                                <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
+                                <img src="./images/jogger1.jpg" class="card-img-top size-img" alt="Brown Cargo Pants">
                                 <div class="card-body d-flex justify-content-between card-txt">
                                     <div class="product-content">
-                                        <p class="card-text mb-0 fw-bold">T-Shirt</p>
-                                        <p class="card-text">&pound;10</p>
+                                        <p class="card-text mb-0 fw-bold">Brown Cargo Pants</p>
+                                        <p class="card-text fw-semibold">&pound;12</p>
                                     </div>
                                     <div class="product-action d-flex align-items-center justify-content-between">
-                                        <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i>
                                         <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
                                     </div>
                                 </div>
@@ -279,50 +302,52 @@
                         </a>
                     </div>
                     <div class="col-md-3 merchant-item mt-5">
-                        <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">T-Shirt</p>
-                                    <p class="card-text">&pound;10</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i>
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                        <a href="product_detail.php">
+                            <div class="card card-wrap">
+                                <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="Yellow T-Shirt">
+                                <div class="card-body d-flex justify-content-between card-txt">
+                                    <div class="product-content">
+                                        <p class="card-text mb-0 fw-bold">Yellow T-Shirt</p>
+                                        <p class="card-text fw-semibold">&pound;10</p>
+                                    </div>
+                                    <div class="product-action d-flex align-items-center justify-content-between">
+                                        <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3 merchant-item mt-5">
-                        <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">T-Shirt</p>
-                                    <p class="card-text">&pound;10</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i>
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                        <a href="product_detail.php">
+                            <div class="card card-wrap">
+                                <img src="./images/women-office-trouser.jpg" class="card-img-top size-img female-cat-img" alt="Female Office Pant">
+                                <div class="card-body d-flex justify-content-between card-txt">
+                                    <div class="product-content">
+                                        <p class="card-text mb-0 fw-bold">Female Office Pant</p>
+                                        <p class="card-text fw-semibold">&pound;17</p>
+                                    </div>
+                                    <div class="product-action d-flex align-items-center justify-content-between">
+                                        <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="w-100 d-none d-md-block"></div>
                     <div class="col-md-3 merchant-item mt-5">
-                        <div class="card card-wrap">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="...">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">T-Shirt</p>
-                                    <p class="card-text">&pound;10</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i>
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                        <a href="product_detail.php">
+                            <div class="card card-wrap">
+                                <img src="./images/women-cargo-pant.jpg" class="card-img-top size-img female-cat-img" alt="Female Cargo Pant">
+                                <div class="card-body d-flex justify-content-between card-txt">
+                                    <div class="product-content">
+                                        <p class="card-text mb-0 fw-bold">Female Cargo Pant</p>
+                                        <p class="card-text fw-semibold">&pound;16</p>
+                                    </div>
+                                    <div class="product-action d-flex align-items-center justify-content-between">
+                                        <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
