@@ -36,14 +36,14 @@
                     <img src="./images/slide-111.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text1">
                         <h1 class="fs-1 fw-bold text-white">Summer Sales</h1>
-                        <p class="fs-6 text-white"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>
+                        <p class="fs-6 text-white"> Get Ready for the Hottest Summer Sales Extravaganza. Don't miss out on our sizzling Summer Sales event, where prices are scorching hot and discounts are off the charts!</p>
                     </div>
                 </div>
                 <div class="carousel-item kal position-relative">
                     <img src="./images/slide-22.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text2">
                         <h1 class="fs-1 fw-bold">Summer Sales</h1>
-                        <p class="fs-6 text-white">Enter the Summer with Style. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>
+                        <p class="fs-6 text-white">Enter the Summer with Style. Get Ready for the Hottest Summer Sales Extravaganza. Don't miss out on our sizzling Summer Sales event, where prices are scorching hot and discounts are off the charts!</p>
                         
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <img src="./images/slide-333.jpg" class="d-block w-100 kater" alt="...">
                     <div class="carousel-caption d-none d-md-block caption-text3">
                         <h1 class="fs-1 fw-bold text-white">Summer Sales</h1>
-                        <p class="fs-6 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit repellat ut, distinctio explicabo mollitia ullam veniam inventore totam officia aliquid error eveniet a consectetur</p>
+                        <p class="fs-6 text-white">Get Ready for the Hottest Summer Sales Extravaganza. Don't miss out on our sizzling Summer Sales event, where prices are scorching hot and discounts are off the charts!</p>
                     </div>
                 </div>
             </div>
@@ -260,37 +260,37 @@
               <div class="media-29101 out">
                 <img src="images/person_1_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Alex Fought</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>What sets them apart is their exceptional customer service. Whenever I had an issue, they were quick to resolve it and ensure my satisfaction.  I highly recommend this site for trendy and quality clothing</p>
               </div>
     
               <div class="media-29101 out">
                 <img src="images/person_2_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Ben Stafford</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>I absolutely love this online clothing store! The variety of styles they offer is fantastic, and the quality of the clothing is outstanding. I've purchased multiple items from them and have always been impressed with the fit.</p>
               </div>
     
               <div class="media-29101 out">
                 <img src="images/person_3_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Devin Bridges</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>The prices are very reasonable, especially considering the trendy designs they have. Shipping is fast, and their customer service is top-notch. I highly recommend this site for all your fashion needs</p>
               </div>
     
               <div class="media-29101 out">
                 <img src="images/person_1_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Joshua Jones</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>I recently discovered this eCommerce clothing site and was pleasantly surprised. The website is user-friendly, making it easy to browse through their extensive collection. I found some unique pieces that I couldn't find anywhere else.</p>
               </div>
     
               <div class="media-29101 out">
                 <img src="images/person_2_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Kellie Kenney</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>The quality of the clothes I received was great, although I wish they offered more detailed size charts to ensure a perfect fit. Overall, I had a positive shopping experience, and I'll definitely be back for more trendy finds</p>
               </div>
     
               <div class="media-29101 out">
                 <img src="images/person_3_sm.jpg" alt="Image" class="img-fluid">
                 <h3><a href="#">Will Reagan</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem iusto officia! Quis tenetur maxime, laboriosam saepe, voluptate necessitatibus tempora!</p>
+                <p>I'm a loyal customer of this eCommerce clothing site, and it's my go-to place for all things fashion. Their selection is always up-to-date with the latest trends, and the clothes are stylish and well-made.</p>
               </div>
     
             </div>

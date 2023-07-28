@@ -4,16 +4,16 @@
           <div class="row mb-5 items">
             <div class="col-md-3 mb-4">
                 <a class="navbar-brand fs-2 fw-bold apparel" href="#"><span class="text-danger">A</span>pparel</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus. </p>
+              <p>Welcome to our Clothing Ecommerce Site, your ultimate destination for fashion-forward individuals seeking trendy and affordable clothing options. </p>
             </div>
             <div class="col-md-3 ml-auto mb-4">
               <h3>Quick Links</h3>
               <ul class="list-unstyled links">
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="male_products.php">Shop Men </a></li>
-                <li><a href="female_products.php">Shop Women</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="male_products.html">Shop Men </a></li>
+                <li><a href="female_products.html">Shop Women</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- <li><a href="#">FAQ</a></li> -->
               </ul>
             </div>
             <div class="col-md-3 ml-auto mb-4">
@@ -55,8 +55,8 @@
           </div>
 
           
-          </div>
+          
         </div>
         
       </div>
-</footer>
+    </footer>

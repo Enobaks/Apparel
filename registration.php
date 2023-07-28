@@ -34,30 +34,35 @@
       </div>
       <div class="col-md-6 pt-5 col-sm-12 register-form ">
         <h2 class="mb-5 text-center fw-bold fs-3">Registration</h2>
-        <form class="row g-3">
+        <form class="row g-3 register">
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Firstname</label><span class="text-danger ml-1">*</span>
-            <input type="text" class="form-control" id="inputEmail4">
+            <label for="first_name" class="form-label">Firstname</label><span class="text-danger ml-1">*</span>
+            <input type="text" name="firstname" class="form-control" id="first_name">
+            <span class="error_message firstname" id="firstNameErr"></span>
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Lastname</label><span class="text-danger ml-1">*</span>
-            <input type="text" class="form-control" id="inputPassword4">
+            <label for="last_name" class="form-label">Lastname</label><span class="text-danger ml-1">*</span>
+            <input type="text" name="lastname" class="form-control" id="last_name">
+            <span class="error_message lastname" id="lastNameErr"></span>
           </div>
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label><span class="text-danger ml-1">*</span>
-            <input type="email" class="form-control" id="inputEmail4">
+            <label for="email" class="form-label">Email</label><span class="text-danger ml-1">*</span>
+            <input type="email" name="email" class="form-control" id="email">
+            <span class="error_message email" id="emailErr"></span>
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label><span class="text-danger ml-1">*</span>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label for="password" class="form-label">Password</label><span class="text-danger ml-1">*</span>
+            <input type="password" name="password" class="form-control" id="password">
+            <span class="error_message password" id="passwordErr"></span>
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Confirm Password</label><span class="text-danger ml-1">*</span>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label for="confirm_password" class="form-label">Confirm Password</label><span class="text-danger ml-1">*</span>
+            <input type="password" name="confirm-password" class="form-control" id="confirm_password">
+            <span class="error_message confirm_password" id="confirmPasswordErr"></span>
           </div>
           
           <div class="col-12 d-flex justify-content-between pt-5">
-            <button type="submit" class="btn main-color">Submit</button>
+            <button type="submit" name="submit" class="btn main-color">Submit</button>
             <p class="fw-medium">Already have an account <a href="./login.php" class="login-link">login</a></p>
           </div>
         </form>
@@ -137,5 +142,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>

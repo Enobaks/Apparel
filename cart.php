@@ -42,8 +42,38 @@
                                 <p class="product-color m-0 text-black"><b class="me-1 fw-bold">Colour:</b>Red</p>
                                 <p class="product-size m-0 text-black"><b class="me-1 fw-bold">Size:</b>XL</p>
                                 <div class="action-points d-flex">
+                                    <select name="quantity" id="quantity" class="qty fs-6 me-2" onchange="qtyPrice(); calcTotal(); calcSubTotal()">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    <p><span class="me-2">|</span>Delete</p>
+                                </div> 
+                            </div>      
+                        </div>
+                        <p class='product-price fw-bold text-black'>&pound;<span class="qtyPrice">10</span></p>
+                        <input name="product_price" class="chest" value="10" readonly disabled hidden />
+                    </div>
+                </div>
+                <hr class="cart-line">
+                <div class="product-item d-flex justify-content-between mb-3">
+                    <img src="./images/women-clothes-img.png" width="100px" class="mr-4 cloth-item" alt="">
+                    <div class="product-description p w-100 d-flex">
+                        <div class="product-description-details d-flex flex-column justify-content-between">
+                            <p class="text-black main-description">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumy</p>
+                            <div>
+                                <p class="product-availability m-0 text-success">In stock</p>
+                                <p class="product-color m-0 text-black"><b class="me-1 fw-bold">Colour:</b>Red</p>
+                                <p class="product-size m-0 text-black"><b class="me-1 fw-bold">Size:</b>XL</p>
+                                <div class="action-points d-flex">
                                     <select name="quantity" id="quantity" class="qty fs-6 me-2">
-                                        <option value="">Select Qty</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -74,38 +104,6 @@
                                 <p class="product-size m-0 text-black"><b class="me-1 fw-bold">Size:</b>XL</p>
                                 <div class="action-points d-flex">
                                     <select name="quantity" id="quantity" class="qty fs-6 me-2">
-                                        <option value="">Select Qty</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                    <p><span class="me-2">|</span>Delete</p>
-                                </div> 
-                            </div>      
-                        </div>
-                        <p class="product-price fw-bold text-black">&pound;10</p>                       
-                    </div>
-                </div>
-                <hr class="cart-line">
-                <div class="product-item d-flex justify-content-between mb-3">
-                    <img src="./images/women-clothes-img.png" width="100px" class="mr-4 cloth-item" alt="">
-                    <div class="product-description p w-100 d-flex">
-                        <div class="product-description-details d-flex flex-column justify-content-between">
-                            <p class="text-black main-description">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumy</p>
-                            <div>
-                                <p class="product-availability m-0 text-success">In stock</p>
-                                <p class="product-color m-0 text-black"><b class="me-1 fw-bold">Colour:</b>Red</p>
-                                <p class="product-size m-0 text-black"><b class="me-1 fw-bold">Size:</b>XL</p>
-                                <div class="action-points d-flex">
-                                    <select name="quantity" id="quantity" class="qty fs-6 me-2">
-                                        <option value="">Select Qty</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -126,16 +124,16 @@
                 </div>
                 <hr class="cart-line">
                 <div class="total-wrap d-flex flex-column justify-content-end align-items-end">
-                    <div class="subtotal">
+                    <div class="subtotal-wrap">
                         <p>
-                            <span class="me-5 fw-semibold">Subtotal:</span><span class="fw-semibold text-dark">&pound;30</span>
+                            <span class="me-5 fw-semibold">Subtotal:</span><span class="fw-semibold text-dark">&pound;<span class="subtotal">30</span></span>
                         </p>
                         <p>
                             <span class="me-5 fw-semibold">Shipping:</span><span class="fw-semibold text-dark">free</span>
                         </p>
                         <hr class="cart-line">
                         <p>
-                            <span class="me-5 fw-semibold text-dark">Total:</span><span class="fw-bold text-black ml-4">&pound;30</span>
+                            <span class="me-5 fw-semibold text-dark">Total:</span><span class="fw-bold text-black ml-4">&pound;<span class="total">30</span></span>
                         </p>
                     </div>
                 </div>
@@ -213,5 +211,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

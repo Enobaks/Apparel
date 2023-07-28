@@ -166,7 +166,7 @@
 .process-check-out {
   margin-top: 10rem !important;
 }
-.subtotal {
+.subtotal-wrap {
   width: 50%;
 }
 .div.location-details > p {
@@ -269,6 +269,12 @@
  .register-image {
    padding: 0 !important;
  }
+ .error_message {
+  display: none;
+  color: #dd3545;
+  font-size: 13px;
+ }
+
  /* Cart Page */
  
  .product-item-wrap {
