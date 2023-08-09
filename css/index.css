@@ -270,7 +270,6 @@
    padding: 0 !important;
  }
  .error_message {
-  display: none;
   color: #dd3545;
   font-size: 13px;
  }
@@ -358,6 +357,9 @@ width: 100%;
 .edit-text {
   font-size: small;
   line-height: 17px;
+}
+.account-wrap {
+  margin-top: 9rem !important;
 }
 .account-section {
   font-size: 1.7rem;

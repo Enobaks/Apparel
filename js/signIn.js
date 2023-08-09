@@ -1,12 +1,13 @@
-var register= document.querySelector('.register');
+var signIn = document.querySelector('.signIn');
+
+
 const regEx = /^[a-zA-Z]+$/;
-var firstname = document.querySelector('.firstname');
 
 
 
-function registerUser(e) {
+function validateUser(e) {
     e.preventDefault();
-    const formData = new FormData(register);
+    const formData = new FormData(signIn);
     const firstName = formData.get('firstname');
     const lastName = formData.get('lastname');
     const email = formData.get('email');
@@ -77,6 +78,7 @@ function registerUser(e) {
         console.log("Password match!");
     } 
 }
+
 
 
 register.addEventListener('submit', registerUser);

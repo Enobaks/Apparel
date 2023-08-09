@@ -27,38 +27,55 @@
     <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
 
-    <!-- Registration Form Begins-->
+    <!-- Registration Form Begins--> 
     <div class="form-wrap row items">
       <div class="col-md-6 register-image">
         <img src="./images/register-image.jpg" alt="" class="img-fluid vimage">
       </div>
       <div class="col-md-6 pt-5 col-sm-12 register-form ">
         <h2 class="mb-5 text-center fw-bold fs-3">Registration</h2>
-        <form class="row g-3 register">
+        <?php if (isset($_GET['error'])) { ?>
+          <p class="text-danger text-end"><?php echo $_GET['error']; ?></p>
+        <?php } ?>
+        <form class="row g-3 register" method="POST" action="auth.php?action=register">
           <div class="col-md-6">
             <label for="first_name" class="form-label">Firstname</label><span class="text-danger ml-1">*</span>
             <input type="text" name="firstname" class="form-control" id="first_name">
             <span class="error_message firstname" id="firstNameErr"></span>
+            <?php if (isset($_GET['firstNameError'])) { ?>
+     		<span class="error error_message"><?php echo $_GET['firstNameError']; ?></span>
+     	<?php } ?>
           </div>
           <div class="col-md-6">
             <label for="last_name" class="form-label">Lastname</label><span class="text-danger ml-1">*</span>
             <input type="text" name="lastname" class="form-control" id="last_name">
             <span class="error_message lastname" id="lastNameErr"></span>
+            <?php if (isset($_GET['lastNameError'])) { ?>
+     		<span class="error error_message"><?php echo $_GET['lastNameError']; ?></span>
+     	<?php } ?>
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email</label><span class="text-danger ml-1">*</span>
             <input type="email" name="email" class="form-control" id="email">
             <span class="error_message email" id="emailErr"></span>
+            <?php if (isset($_GET['emailError'])) { ?>
+     		<span class="error_message"><?php echo $_GET['emailError']; ?></span>
+     	<?php } ?>
           </div>
           <div class="col-md-6">
             <label for="password" class="form-label">Password</label><span class="text-danger ml-1">*</span>
             <input type="password" name="password" class="form-control" id="password">
             <span class="error_message password" id="passwordErr"></span>
+            <?php if (isset($_GET['passwordError'])) { ?>
+     		<span class="error_message"><?php echo $_GET['passwordError']; ?></span>
+     	<?php } ?>
           </div>
           <div class="col-md-6">
             <label for="confirm_password" class="form-label">Confirm Password</label><span class="text-danger ml-1">*</span>
             <input type="password" name="confirm-password" class="form-control" id="confirm_password">
-            <span class="error_message confirm_password" id="confirmPasswordErr"></span>
+            <?php if (isset($_GET['confirmPasswordError'])) { ?>
+     		<span class="error_message"><?php echo $_GET['confirmPasswordError']; ?></span>
+     	<?php } ?>
           </div>
           
           <div class="col-12 d-flex justify-content-between pt-5">
@@ -68,6 +85,36 @@
         </form>
       </div>
     </div>
+
+    <!-- Error Handling --> 
+  
+
+    
+    <?php
+      // if (!isset($_GET['signup'])) {
+      //   exit();
+      // } else {
+      //   $signUpCheck = $_GET['signup'];
+        
+      //   if ($signUpCheck == "empty") {
+      //     echo "<span class='error error_message'>All input fields are required</span>";
+      //     exit();
+      //   } else if ($signUpCheck == "char") {
+      //     echo "<span class='error error_message'>Name needs to be valid (only letters!)</span>";
+      //     exit();
+      //   } else if ($signUpCheck == "email") {
+      //     echo "<span class='error error_message'>Enter a valid email!</span>";
+      //     exit();
+      //   } else if ($signUpCheck == "confirmpassword") {
+      //     echo "<span class='error error_message'>Password needs to match</span>";
+      //     exit();
+      //   } else if ($signUpCheck == "success") {
+      //     echo "<span class='error text-success'>Registration Successful!</span>";
+      //     exit();
+      //   }
+      // }
+    
+    ?>
     
       <!-- Registration Form Ends -->
 
@@ -142,6 +189,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/register.js"></script>
+    <!-- <script src="js/register.js"></script> -->
 </body>
 </html>

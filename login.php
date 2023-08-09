@@ -34,21 +34,24 @@
       </div>
       <div class="col-md-6 pt-5 col-sm-12 register-form">
         <h2 class="mb-5 text-center fw-bold fs-3">Sign In</h2>
-        <form class="row g-3">
+        <form class="row g-3 signIn" method="POST" action="auth.php?action=signIn">
+          <?php if (isset($_GET['error'])) { ?>
+            <p class="text-danger text-end"><?php echo $_GET['error']; ?></p>
+          <?php } ?>
           <div class="col-md-12">
             <label for="inputEmail4" class="form-label">Email</label><span class="text-danger ml-1">*</span>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="email" name="email" class="form-control" id="inputEmail4">
           </div>
           <div class="col-md-12">
             <label for="inputPassword4" class="form-label">Password</label><span class="text-danger ml-1">*</span>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" name="password" class="form-control" id="inputPassword4">
           </div>
           <div class="col-12 d-flex justify-content-between pt-1">
             <a href="forgot_password.php" class="register-link">Forgot Password</a>
             <p class="fw-medium">Don't have an account <a href="./registration.php" class="register-link">Register</a></p>
           </div>
           <div class="submit-wrap d-flex justify-content-center">
-            <a href="profile.php" class="btn main-color">Submit</a>
+            <button type="submit" class="btn main-color">Submit</button>
           </div>
         </form>
       </div>
@@ -127,5 +130,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script src="js/signIn.js"></script> -->
 </body>
 </html>

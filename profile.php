@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +32,8 @@
          <?php require "includes/navbar.php"?>
         <!-- Navbar Ends -->
         <div class="account">
-            <div class="container mb-5 p-0">
-                <h2 class="account-section my-5 fw-smemibold">Your Account</h2>
+            <div class="container account-wrap mb-5 p-0">
+                <h2 class="account-section my-5 fw-semibold p-2">Hello <span><?php echo $_SESSION["firstname"];?></span></h2>
                 <div class="row items">
                     <div class="d-flex justify-content-center filo">
                         <div class="col-md-3 d-flex py-1 address align-items-center">

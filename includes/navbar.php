@@ -32,7 +32,7 @@
                     <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
                     <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li><a class="dropdown-item" href="../cloth-store/index.php">Sign out</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

@@ -69,148 +69,33 @@
     <div class="items-wrap">
         <h2 class="text-center my-5 fw-bold fs-2">Fashion for Men and Women</h2>
         <div class="row items">
-            <div class="col-md-12 d-flex justify-content-around flex-column flex-sm-row">
+            <div class="col-md-12 d-flex justify-content-around flex-row flex-wrap flex-sm-row">
+                <?php require "config.php";?>
+
+                <?php
+                    $products = $conn->query("SELECT * FROM `products` LIMIT 8");
+                    $products->execute();
+                    $data = $products->fetchAll(PDO::FETCH_ASSOC);
+
+                    foreach($data as $product) {
+                ?>
                 <div class="col-md-3 merchant-item mt-5">
                     <a href="product_detail.php">
                         <div class="card card-wrap ">
-                            <img src="./images/tshirt-img.png" class="card-img-top size-img" alt="T-Shirt">
+                            <img src="<?php echo $product['image']?>" class="card-img-top size-img" alt="<?php echo $product['title']?>">
                             <div class="card-body d-flex justify-content-between card-txt">
                                 <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Yellow T-Shirt</p>
-                                    <p class="card-text fw-semibold">&pound;10</p>
+                                    <p class="card-text mb-0 fw-bold"><?php echo $product['title']?></p>
+                                    <p class="card-text fw-semibold">&pound;<?php echo $product['price']?></p>
                                 </div>
                                 <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
                                     <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/women-clothes-img.png" class="card-img-top size-img" alt="Red Poker-dot Dress">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Red Poker-dot Dress</p>
-                                    <p class="card-text  fw-semibold">&pound;15</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/jogger1.jpg" class="card-img-top size-img" alt="Brown Cargo Pants">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Brown Cargo Pants</p>
-                                    <p class="card-text fw-semibold">&pound;12</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="w-100 d-none d-md-block"></div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/women-blouse1.jpg" class="card-img-top size-img" alt="Women Patterned Top">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Women Patterned Top </p>
-                                    <p class="card-text fw-semibold">&pound;14</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row items next-line">
-            <div class="col-md-12 d-flex justify-content-around flex-column flex-sm-row">
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/summer-shirt1.jpg" class="card-img-top size-img" alt="Blue Striped Casual Shirt Long Sleeve">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Blue Striped Casual Shirt Long Sleeve</p>
-                                    <p class="card-text fw-semibold">&pound;20</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/women-summer-dress.jpg" class="card-img-top size-img" alt="Summer Sleeveless Printed Dress">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Summer Sleeveless Printed Dress </p>
-                                    <p class="card-text fw-semibold">&pound;9</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/summer-shirt2.jpg" class="card-img-top size-img" alt="Men's Hawaiian Floral Shirt Button Down">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Men's Hawaiian Floral Shirt Button Down</p>
-                                    <p class="card-text fw-semibold">&pound;22</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
-                        <div class="card card-wrap">
-                            <img src="./images/women-summer-dress2.jpg" class="card-img-top size-img" alt="Women Short Sleeve Summer Dress">
-                            <div class="card-body d-flex justify-content-between card-txt">
-                                <div class="product-content">
-                                    <p class="card-text mb-0 fw-bold">Women Short Sleeve Summer Dress.</p>
-                                    <p class="card-text fw-semibold">&pound;25</p>
-                                </div>
-                                <div class="product-action d-flex align-items-center justify-content-between">
-                                    <!-- <i class="fa-regular fa-heart fs-4" style="color: #000000; "></i> -->
-                                    <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <?php }?>
             </div>
         </div>
     </div>
