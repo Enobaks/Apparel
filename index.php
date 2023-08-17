@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,10 +84,10 @@
                     foreach($data as $product) {
                 ?>
                 <div class="col-md-3 merchant-item mt-5">
-                    <a href="product_detail.php">
+                    <a href="product_detail.php?id=<?=$product['id']?>">
                         <div class="card card-wrap ">
                             <img src="<?php echo $product['image']?>" class="card-img-top size-img" alt="<?php echo $product['title']?>">
-                            <div class="card-body d-flex justify-content-between card-txt">
+                            <div class="card-body d-flex justify-content-between card-txt ven">
                                 <div class="product-content">
                                     <p class="card-text mb-0 fw-bold"><?php echo $product['title']?></p>
                                     <p class="card-text fw-semibold">&pound;<?php echo $product['price']?></p>

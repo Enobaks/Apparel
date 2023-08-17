@@ -26,13 +26,29 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link fw-bold dropdown-toggle" href="../cloth-store/login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-regular fa-user me-2"></i>Account
+                        <i class="fa-regular fa-user me-2"></i>
+                        <?php if (isset($_SESSION['firstname']) && isset($_SESSION['firstname'])) {
+                            $splitFirstName = str_split($_SESSION['firstname']);
+                            $splitLastName = str_split($_SESSION['lastname']);
+                            echo 'Hi'." ".$splitFirstName[0].$splitLastName[0];
+
+                        }else {
+                            echo "Account";
+                        }       
+                        ?>
+
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
-                    <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../cloth-store/index.php">Sign out</a></li>
+                        <?php
+                            if (!isset($_SESSION['firstname']) && !isset($_SESSION['lastname'])) {
+                        ?>
+                        <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
+                        <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../cloth-store/logout.php">Logout out</a></li>
+                        <?php }else {?>
+                            <li><a class="dropdown-item" href="../cloth-store/logout.php">Logout out</a></li>
+                        <?php }?>
                     </ul>
                 </li>
                 <li class="nav-item">

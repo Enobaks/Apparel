@@ -4,7 +4,6 @@ session_start();
 
 <?php require "config.php";?>
 
-
 <?php
 
 // function to filter inputs
@@ -16,8 +15,8 @@ function validate($data){
 }
 
 
-// Registration
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    // Registration
     if ($_GET['action'] == 'register') {
     
         $firstName = validate($_POST['firstname']);
@@ -25,14 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $email = validate($_POST['email']);
         $password = validate($_POST['password']);
         $confirmPassword = validate($_POST['confirm-password']);
-
-        echo $firstName;
-        echo $lastName;
-        echo $email;
-        echo $password;
-        echo $confirmPassword;
-
-
 
         if (empty($firstName)) {
             header("Location: registration.php?error=First name is required");
@@ -90,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
         
     }
-
+    // Login
     if ($_GET['action'] == 'signIn') {
         $email = validate($_POST['email']);
         $password = validate($_POST['password']);
@@ -110,14 +101,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $login= $conn->query("SELECT * FROM users WHERE email='$email'");
             $login->execute();
             $data = $login->fetch(PDO::FETCH_ASSOC); 
-            // echo password_verify($password, $data['mypassword']);
-            // return;
+            
             if($login->rowCount() > 0) {
                 if(password_verify($password, $data['mypassword'])) {
                     
                     $_SESSION["firstname"] = $data['firstname'];
                     $_SESSION['lastname'] = $data['lastname'];
                     $_SESSION['email'] = $data['email'];
+                    $_SESSION['user_id'] = $data['id'];
                     header("location: profile.php");
                 } else {
                     header("Location: login.php?error=Email or Password is not correct");

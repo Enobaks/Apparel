@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <!-- Navbar Begins -->
@@ -130,6 +131,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    
     <!-- <script src="js/signIn.js"></script> -->
 </body>
 </html>

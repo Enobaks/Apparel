@@ -27,7 +27,8 @@
     <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
 
-    <!-- Registration Form Begins--> 
+    <!-- Registr 
+    ation Form Begins--> 
     <div class="form-wrap row items">
       <div class="col-md-6 register-image">
         <img src="./images/register-image.jpg" alt="" class="img-fluid vimage">
