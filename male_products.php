@@ -59,12 +59,10 @@ session_start();
                                 <img src="<?php echo $product['image']?>" class="card-img-top size-img" alt="<?php echo $product['title']?>">
                                 <div class="card-body d-flex justify-content-between card-txt ven">
                                     <div class="product-content">
-                                        <p class="card-text mb-0 fw-bold"><?php echo $product['title']?></p>
-                                        <p class="card-text fw-semibold">&pound;<?php echo $product['price']?></p>
+                                        <p class="card-text mb-0 fw-bold text-secondary"><?php echo $product['title']?></p>
+                                        <p class="card-text fw-semibold text-secondary">&pound;<?php echo $product['price']?></p>
                                     </div>
-                                    <div class="product-action d-flex align-items-center justify-content-between">
-                                        <i class="fa-solid fa-bag-shopping fs-4" style="color: #000000;"></i>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </a>

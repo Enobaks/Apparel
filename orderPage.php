@@ -35,8 +35,8 @@ session_start();
     <!-- Navbar Begins -->
     <?php require "includes/navbar.php"?>
     <!-- Navbar Ends -->
-    <div class="cart-wrap p-3">
-        <h3 class="mb-4 shopping-basket">Shopping Basket</h3>
+    <div class="cart-wrap p-3 container">
+        <h3 class="mb-4 shopping-basket">Your Orders</h3>
         <div class="row items">
             <div class="col-md-7 product-item-wrap p-2">
                 <!-- start here --> 
@@ -63,7 +63,7 @@ session_start();
                     } else {
                     $user_id = $_SESSION['user_id'];
 
-                    $products = $conn->query("SELECT products.*, cart.user_id, cart.quantity FROM `products` INNER JOIN cart on products.id = cart.product_id INNER JOIN users on cart.user_id = $user_id;");
+                    $products = $conn->query("SELECT products.*, orders.date, orders.quantity FROM `orders` INNER JOIN products on products.id = orders.product_id INNER JOIN users on orders.user_id = $user_id;");
                     $products->execute();
                     $data = $products->fetchAll(PDO::FETCH_ASSOC);
                     $subTotal = 0;
@@ -71,58 +71,34 @@ session_start();
                     // print_r($data);
                     foreach($data as $product ) {                      
                 ?>
-                <div class="product-item d-flex justify-content-between mb-3">
-                    <img src="<?= $product['image'];?>" width="100px" class="mr-4 cloth-item" alt="<?= $product['title'];?>">
-                    <div class="product-description p w-100 d-flex">
-                        <div class="product-description-details d-flex flex-column justify-content-between">
-                            <p class="text-black main-description"><?= $product['description'];?></p>
-                    
-                            <div>
-                                <p class="product-availability m-0 text-success">In stock</p>
-                                <!-- <p class="product-color m-0 text-black"><b class="me-1 fw-bold">Colour:</b>Red</p>
-                                <p class="product-size m-0 text-black"><b class="me-1 fw-bold">Size:</b>XL</p> -->
-                                <div class="action-points d-flex">
-                                    <label for="quantity" class="me-1 fw-bold">Qty:</label>
-                                    <input type="text" name="quantity" readonly class="qty fs-6 me-2 pl-2" id="quantity" value="<?= $product['quantity'];?>">
-                             
-                                    <div class="d-flex">
-                                        <span class="">|</span>
-                                        <a href="deleteItem.php?id=<?=$product['id']?>&&u_id=<?=$product['user_id']?>" class="delete text-black fw-bold" onclick="myFunction()"> Delete
-                                        </a>
-                                    </div>
-                                </div> 
-                            </div>      
+                <div class="order-table mb-5">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="d-flex flex-column">
+                                <span>ORDER PLACED</span>
+                                <span><?=date('jS \of F Y', strtotime($product['date']));?></span>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span>TOTAL</span>
+                                <span>&pound;<span><?=$product['price'];?></span></span>
+                            </div>
                         </div>
-                        <p class='product-price fw-bold text-black'>&pound;<span class="qtyPrice"><?= $newPrice =$product['price'] * $product['quantity'];?></span></p>
-                        <!-- <input name="product_price" class="chest" value="<?= $product['price'];?>" readonly disabled hidden /> -->
+                        <div class="card-body d-flex ">
+                            <img src="<?= $product['image'];?>" width="50px" height="90px" alt="<?= $product['title'];?>" class="mr-3 cloth-item">
+                            <div>
+                                <p><?= $product['title'];?></p>
+                                <a href="product_detail.php?id=<?= $product['id'];?>" >
+                                    <button class="btn btn-custom px-3">view your item</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <hr class="cart-line">
-                <?php
-                $subTotal += $newPrice;
-                ?>
                 <?php } ?>
                 
-              
-                <!-- <hr class="cart-line"> -->
-                <div class="total-wrap d-flex flex-column justify-content-end align-items-end">
-                    <div class="subtotal-wrap">
-                        <p>
-                            <span class="me-5 fw-semibold">Subtotal:</span><span class="fw-semibold text-dark">&pound;<span class="subtotal"><?= isset($subTotal)? $subTotal : '0';?></span></span>
-                        </p>
-                        <p>
-                            <span class="me-5 fw-semibold">Shipping:</span><span class="fw-semibold text-dark">free</span>
-                        </p>
-                        <hr class="cart-line">
-                        <p>
-                            <span class="me-5 fw-semibold text-dark">Total:</span><span class="fw-bold text-black ml-4">&pound;<span class="total"><?= isset($subTotal)? $subTotal : '0';?></span></span>
-                        </p>
-                    </div>
-                </div>
                 <?php } ?>
             </div>
-            <div class="col-md-4 bg-light rounded">
+            <!-- <div class="col-md-4 bg-light rounded">
                 <div class="checkout-wrap d-flex flex-column align-items-start">
                     <h4 class="fw-bold pt-4">Payment Info.</h4>
                     <hr class="payment-line bg-secondary">
@@ -169,7 +145,7 @@ session_start();
                   
                 </div>
              
-            </div>
+            </div> -->
         </div>
     </div>
 

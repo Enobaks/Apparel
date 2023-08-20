@@ -45,26 +45,47 @@
                         <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
                         <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../cloth-store/logout.php">Logout out</a></li>
+                        <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li>
                         <?php }else {?>
-                            <li><a class="dropdown-item" href="../cloth-store/logout.php">Logout out</a></li>
+                            <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li>
                         <?php }?>
                     </ul>
                 </li>
+                <?php
+                        
+                    if (isset($_SESSION['user_id'])) {
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="../cloth-store/orderPage.php">Orders</a>
+                </li>
+                <?php } ?>
                 <li class="nav-item">
                     <a class="nav-link fw-bold cart-wrap" href="../cloth-store/cart.php">
                         <i class="fa-solid fa-cart-shopping me-2 cart" style="color: #000000a6"></i>Cart
                         <i class="ti-shopping-cart"></i>
+                        <?php
+                        require 'config.php';
+                            if (!isset($_SESSION['user_id'])) {
+                        ?>
                         <span class="cart-qty d-none">3</span>
+                        <?php } else { 
+                             $user_id = $_SESSION['user_id'];  
+                             $productCount = $conn->query("SELECT SUM(cart.quantity) FROM `cart` where cart.user_id = $user_id");
+                             $productCount->execute();
+                             $data = $productCount->fetch(PDO::FETCH_ASSOC);
+                             $subTotal = 0;  
+                        ?>
+                        <span class="cart-qty text-white"><?= $data['SUM(cart.quantity)'] == 0 ? "0" : $data['SUM(cart.quantity)']?></span>
+                        <?php } ?>
                     </a>
                 </li>
             </ul>
-            <form class="d-flex search" role="search">
+            <!-- <form class="d-flex search" role="search">
                 <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn main-color" type="submit">
                     <i class="fa-solid fa-magnifying-glass glass" style="color: #ffffff;"></i>
                 </button>
-            </form>
+            </form> -->
         </div>
     </div>
 </nav>
