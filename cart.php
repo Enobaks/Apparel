@@ -44,6 +44,7 @@ session_start();
                     if (!isset($_SESSION['user_id']) ) {
                 ?>
                  <hr class="cart-line">
+                 <p class="fw-bold fs-6">No Item in Cart</p>
                  <div class="total-wrap d-flex flex-column justify-content-end align-items-end">
                     <div class="subtotal-wrap">
                         <p>
@@ -63,7 +64,7 @@ session_start();
                     } else {
                     $user_id = $_SESSION['user_id'];
 
-                    $products = $conn->query("SELECT products.*, cart.user_id, cart.quantity FROM `products` INNER JOIN cart on products.id = cart.product_id INNER JOIN users on cart.user_id = $user_id;");
+                    $products = $conn->query("SELECT products.*, cart.user_id, cart.quantity FROM `products` INNER JOIN cart on products.id = cart.product_id INNER JOIN users on cart.user_id = users.id WHERE cart.user_id = $user_id;");
                     $products->execute();
                     $data = $products->fetchAll(PDO::FETCH_ASSOC);
                     $subTotal = 0;
@@ -162,9 +163,14 @@ session_start();
                         </div>
                     </div>
                     <div class="ten d-flex justify-content-center">
+                        <?php if(isset($_SESSION['firstname']) && isset($_SESSION['user_id'])) {?>
                         <a href="orderedItems.php" class="ordered">
                             <button class="btn btn-custom px-3 checkout" onclick="setTimeout(myFunction(), 2000)"> Checkout</button>
                         </a>
+                        <?php }
+                            else {}
+                        ?>
+                        <!-- <button class="btn btn-custom px-3 checkout" onclick="setTimeout(myFunction(), 2000)"> Checkout</button> -->
                     </div>
                   
                 </div>

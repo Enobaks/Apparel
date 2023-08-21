@@ -45,7 +45,7 @@
                         <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
                         <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li>
+                        <!-- <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li> -->
                         <?php }else {?>
                             <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li>
                         <?php }?>
@@ -80,12 +80,7 @@
                     </a>
                 </li>
             </ul>
-            <!-- <form class="d-flex search" role="search">
-                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn main-color" type="submit">
-                    <i class="fa-solid fa-magnifying-glass glass" style="color: #ffffff;"></i>
-                </button>
-            </form> -->
+           
         </div>
     </div>
 </nav>

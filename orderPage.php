@@ -63,7 +63,7 @@ session_start();
                     } else {
                     $user_id = $_SESSION['user_id'];
 
-                    $products = $conn->query("SELECT products.*, orders.date, orders.quantity FROM `orders` INNER JOIN products on products.id = orders.product_id INNER JOIN users on orders.user_id = $user_id;");
+                    $products = $conn->query("SELECT products.*, orders.date, orders.quantity FROM `orders` INNER JOIN products on products.id = orders.product_id INNER JOIN users on orders.user_id = users.id WHERE users.id = $user_id;");
                     $products->execute();
                     $data = $products->fetchAll(PDO::FETCH_ASSOC);
                     $subTotal = 0;

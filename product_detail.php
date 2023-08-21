@@ -6,7 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     // Check if user exists (else direct user to login)
     $user_id = $_SESSION['user_id'];
-    $_SESSION['product_id'] = $product_id =  $_GET['id'];
+    // echo $_GET['id'];
+    $_SESSION['product_id'] = $product_id = $_GET['id'];
     $quantity = $_POST['quantity'];
 
     if (isset($_SESSION['user_id'])) {

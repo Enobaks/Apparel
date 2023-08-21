@@ -48,7 +48,7 @@
             <input type="password" name="password" class="form-control" id="inputPassword4">
           </div>
           <div class="col-12 d-flex justify-content-between pt-1">
-            <a href="forgot_password.php" class="register-link">Forgot Password</a>
+            <!-- <a href="forgot_password.php" class="register-link">Forgot Password</a> -->
             <p class="fw-medium">Don't have an account <a href="./registration.php" class="register-link">Register</a></p>
           </div>
           <div class="submit-wrap d-flex justify-content-center">
