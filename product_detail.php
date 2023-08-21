@@ -133,8 +133,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             <input type="hidden" name="price" value="<?= $data['price']?>">
                             <input type="hidden" name="description" value="<?= $data['description']?>">
                             <!-- Button trigger modal -->
+                            <?php
+                                if(isset($_SESSION['user_id'])) {
+                            ?>
                             <button class="btn btn-custom px-3" type="submit" onclick="myFunction()" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-shopping-cart mr-1"></i> Add To
                                 Cart</button>
+                            <?php
+                                }
+                                else
+                                {
+                            ?>
+                            <button class="btn btn-custom px-3" type="submit"><i class="fa fa-shopping-cart mr-1"></i> Add To
+                                Cart</button>
+                            <?php } ?>
                         </div>
 
                         
